@@ -1,29 +1,32 @@
 # Dockerfile para Railway - WhatsApp Agent
+# Optimizado siguiendo mejores prácticas de Docker para Node.js
+
 FROM node:20-alpine
 
-WORKDIR /app
+# Instalar dependencias del sistema si son necesarias
+RUN apk add --no-cache libc6-compat
+
+# Establecer directorio de trabajo final
+WORKDIR /app/frontend
 
 # Copiar package.json primero para cache de dependencias
-COPY frontend/package*.json ./frontend/
+COPY frontend/package*.json ./
 
 # Instalar dependencias
-WORKDIR /app/frontend
-RUN npm install
+RUN npm ci --include=dev
 
-# Copiar el resto del código
-WORKDIR /app
-COPY . .
+# Copiar el código de frontend
+COPY frontend/ .
 
 # Build de Next.js
-WORKDIR /app/frontend
 RUN npm run build
-
-# Exponer puerto
-EXPOSE 5000
 
 # Variables de entorno
 ENV NODE_ENV=production
 ENV PORT=5000
 
-# Comando de inicio
+# Exponer puerto
+EXPOSE 5000
+
+# Comando de inicio - SIN usar cd
 CMD ["npm", "start"]

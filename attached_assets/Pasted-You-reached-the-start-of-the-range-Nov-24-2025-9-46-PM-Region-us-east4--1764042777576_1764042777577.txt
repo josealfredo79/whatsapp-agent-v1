@@ -1,0 +1,156 @@
+You reached the start of the range
+Nov 24, 2025, 9:46 PM
+ 
+[Region: us-east4]
+=========================
+Using Detected Dockerfile
+=========================
+
+context: cnsx-jAaG
+[internal] load build definition from Dockerfile
+[internal] load build definition from Dockerfile
+[internal] load build definition from Dockerfile
+[internal] load build definition from Dockerfile
+[internal] load metadata for docker.io/library/node:20-alpine
+[auth] library/node:pull token for registry-1.docker.io
+[auth] library/node:pull token for registry-1.docker.io
+[internal] load metadata for docker.io/library/node:20-alpine
+[internal] load .dockerignore
+[internal] load .dockerignore
+[internal] load .dockerignore
+[internal] load .dockerignore
+[9/9] RUN npm run build
+[8/9] WORKDIR /app/frontend
+[7/9] COPY . .
+[6/9] WORKDIR /app
+[5/9] RUN npm install
+[4/9] WORKDIR /app/frontend
+[3/9] COPY frontend/package*.json ./frontend/
+[internal] load build context
+[2/9] WORKDIR /app
+[1/9] FROM docker.io/library/node:20-alpine@sha256:6178e78b972f79c335df281f4b7674a2d85071aae2af020ffa39f0a770265435
+[1/9] FROM docker.io/library/node:20-alpine@sha256:6178e78b972f79c335df281f4b7674a2d85071aae2af020ffa39f0a770265435
+[internal] load build context
+[2/9] WORKDIR /app
+[internal] load build context
+[internal] load build context
+[3/9] COPY frontend/package*.json ./frontend/
+[3/9] COPY frontend/package*.json ./frontend/
+[4/9] WORKDIR /app/frontend
+[4/9] WORKDIR /app/frontend
+[5/9] RUN npm install
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 638 packages, and audited 639 packages in 21s
+
+170 packages are looking for funding
+  run `npm fund` for details
+
+4 vulnerabilities (3 high, 1 critical)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 11.6.3
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.3
+npm notice To update run: npm install -g npm@11.6.3
+npm notice
+[5/9] RUN npm install
+[6/9] WORKDIR /app
+[6/9] WORKDIR /app
+[7/9] COPY . .
+[7/9] COPY . .
+[8/9] WORKDIR /app/frontend
+[8/9] WORKDIR /app/frontend
+[9/9] RUN npm run build
+
+> frontend@0.1.0 build
+> next build
+
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+  ▲ Next.js 14.2.23
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/6) ...
+   Generating static pages (1/6) 
+   Generating static pages (2/6) 
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+   Generating static pages (4/6) 
+ ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ✓ Generating static pages (6/6)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                               Size     First Load JS
+┌ ○ /                                     584 B          87.7 kB
+├ ○ /_not-found                           873 B            88 kB
+└ ○ /dashboard                            20 kB           107 kB
++ First Load JS shared by all             87.1 kB
+  ├ chunks/117-8f74d75c5d651a98.js        31.6 kB
+  ├ chunks/fd9d1056-87da80e0c187477b.js   53.6 kB
+  └ other shared chunks (total)           1.92 kB
+
+Route (pages)                             Size     First Load JS
+┌ ƒ /api/agendar                          0 B            78.9 kB
+├ ƒ /api/conversations                    0 B            78.9 kB
+├ ƒ /api/google-docs                      0 B            78.9 kB
+├ ƒ /api/health                           0 B            78.9 kB
+├ ƒ /api/ia-test                          0 B            78.9 kB
+├ ƒ /api/messages/[id]                    0 B            78.9 kB
+├ ƒ /api/registro                         0 B            78.9 kB
+├ ƒ /api/send-message                     0 B            78.9 kB
+├ ƒ /api/socket                           0 B            78.9 kB
+└ ƒ /api/webhook/whatsapp                 0 B            78.9 kB
++ First Load JS shared by all             78.9 kB
+  ├ chunks/framework-f66176bb897dc684.js  44.8 kB
+  ├ chunks/main-547d9e3b488eb538.js       32.2 kB
+  └ other shared chunks (total)           1.89 kB
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+[9/9] RUN npm run build
+exporting to docker image format
+exporting to image
+importing to docker
+[auth] sharing credentials for production-us-east4-eqdc4a.railway-registry.com
+[auth] sharing credentials for production-us-east4-eqdc4a.railway-registry.com
+importing to docker
+Build time: 137.93 seconds
+ 
+=========================
+Container failed to start
+=========================
+ 
+The executable `cd` could not be found.
+ 
+You reached the end of the range
+Nov 24, 2025, 9:50 PM
+
+
+whatsapp-agent-v1 | Railway
