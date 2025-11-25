@@ -1,0 +1,164 @@
+
+Architecture
+Observability
+Logs
+Settings
+
+
+
+
+
+
+
+Activity
+
+whatsapp-agent-v1
+
+Deployment successful
+
+2 hours ago
+
+whatsapp-agent-v1
+
+Deployment failed
+
+3 hours ago
+
+whatsapp-agent-v1
+
+Deployment failed
+
+3 hours ago
+
+
+13 changes in whatsapp-agent-v1
+
+josealfredo79
+
+·
+3 hours ago
+whatsapp-agent-v1
+
+Deployment failed
+
+3 hours ago
+
+
+New environment
+
+josealfredo79
+
+·
+3 hours ago
+
+whatsapp-agent-v1
+Deployments
+Variables
+Metrics
+Settings
+Unexposed service
+us-east4-eqdc4a
+1 Replica
+
+
+
+
+History
+
+whatsapp-agent-v1
+/
+775646a6
+Active
+
+Nov 24, 2025, 7:01 PM
+Details
+Build Logs
+Deploy Logs
+Search build logs
+
+You reached the start of the range
+Nov 24, 2025, 7:01 PM
+ 
+[Region: us-east4]
+==============
+Using Nixpacks
+==============
+
+context: q16z-DsOZ
+╔════════════════════════ Nixpacks v1.38.0 ═══════════════════════╗
+║ setup      │ nodejs_20, npm-9_x                                 ║
+║─────────────────────────────────────────────────────────────────║
+║ install    │ cd frontend && npm ci --include=dev || npm install ║
+║─────────────────────────────────────────────────────────────────║
+║ build      │ cd frontend && npm install && npm run build        ║
+║─────────────────────────────────────────────────────────────────║
+║ start      │ cd frontend && npm start                           ║
+╚═════════════════════════════════════════════════════════════════╝
+
+internal
+load build definition from Dockerfile
+0ms
+
+internal
+load metadata for ghcr.io/railwayapp/nixpacks:ubuntu-1745885067
+81ms
+
+internal
+load .dockerignore
+0ms
+
+stage-0
+FROM ghcr.io/railwayapp/nixpacks:ubuntu-1745885067@sha256:d45c89d80e13d7ad0fd555b5130f22a866d9dd10e861f589932303ef2314c7de
+84ms
+
+internal
+load build context
+0ms
+
+stage-0
+WORKDIR /app/ cached
+0ms
+
+stage-0
+COPY .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix
+177ms
+
+stage-0
+RUN nix-env -if .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix && nix-collect-garbage -d
+38s
+61 store paths deleted, 559.41 MiB freed
+
+stage-0
+COPY . /app/.
+111ms
+
+stage-0
+RUN cd frontend && npm ci --include=dev || npm install
+20s
+Run `npm audit` for details.
+
+stage-0
+COPY . /app/.
+339ms
+
+stage-0
+RUN cd frontend && npm install && npm run build
+40s
+ƒ (Dynamic) server-rendered on demand
+
+stage-0
+RUN printf '\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile
+113ms
+
+stage-0
+COPY . /app
+37ms
+
+importing to docker
+14s
+
+auth
+sharing credentials for production-us-east4-eqdc4a.railway-registry.com
+0ms
+=== Successfully Built! ===
+Run:
