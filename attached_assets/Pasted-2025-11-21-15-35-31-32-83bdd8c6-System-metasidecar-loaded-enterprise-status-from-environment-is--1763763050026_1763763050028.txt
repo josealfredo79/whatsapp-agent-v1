@@ -1,0 +1,108 @@
+2025-11-21 15:35:31.32
+83bdd8c6
+System
+metasidecar: loaded enterprise status from environment is_enterprise=false
+2025-11-21 15:35:31.32
+83bdd8c6
+System
+forwarding local port 5000 to external port 80 (mapped as 1104)
+2025-11-21 15:35:38.02
+83bdd8c6
+User
+> frontend@0.1.0 prestart
+2025-11-21 15:35:38.02
+83bdd8c6
+User
+> node create-google-credentials.js
+2025-11-21 15:35:38.28
+83bdd8c6
+User
+✅ google-credentials.json creado correctamente desde variable de entorno
+2025-11-21 15:35:38.29
+83bdd8c6
+User
+> NODE_ENV=production node server.js
+2025-11-21 15:35:38.29
+83bdd8c6
+User
+> frontend@0.1.0 start
+2025-11-21 15:35:45.81
+83bdd8c6
+User
+Servidor Next.js + Socket.io + MCP listo en http://0.0.0.0:5000
+2025-11-21 15:59:09.99
+eebfaf3e
+System
+starting up user application
+2025-11-21 15:59:09.99
+eebfaf3e
+System
+metasidecar: loaded enterprise status from environment is_enterprise=false
+2025-11-21 15:59:09.99
+eebfaf3e
+System
+forwarding local port 5000 to external port 80 (mapped as 1104)
+2025-11-21 15:59:16.93
+eebfaf3e
+User
+> node create-google-credentials.js
+2025-11-21 15:59:16.93
+eebfaf3e
+User
+> frontend@0.1.0 prestart
+2025-11-21 15:59:17.20
+eebfaf3e
+User
+✅ google-credentials.json creado correctamente desde variable de entorno
+2025-11-21 15:59:17.21
+eebfaf3e
+User
+> frontend@0.1.0 start
+2025-11-21 15:59:17.21
+eebfaf3e
+User
+> NODE_ENV=production node server.js
+2025-11-21 15:59:24.40
+eebfaf3e
+User
+Servidor Next.js + Socket.io + MCP listo en http://0.0.0.0:5000
+2025-11-21 16:01:33.88
+ac019860
+System
+starting up user application
+2025-11-21 16:01:33.88
+ac019860
+System
+metasidecar: loaded enterprise status from environment is_enterprise=false
+2025-11-21 16:01:33.88
+ac019860
+System
+forwarding local port 5000 to external port 80 (mapped as 1104)
+2025-11-21 16:01:42.16
+ac019860
+User
+> frontend@0.1.0 prestart
+2025-11-21 16:01:42.16
+ac019860
+User
+> node create-google-credentials.js
+2025-11-21 16:01:42.57
+ac019860
+User
+✅ google-credentials.json creado correctamente desde variable de entorno
+2025-11-21 16:01:42.58
+ac019860
+User
+> frontend@0.1.0 start
+2025-11-21 16:01:42.58
+ac019860
+User
+> NODE_ENV=production node server.js
+2025-11-21 16:01:44.88
+eebfaf3e
+System
+system: received signal terminated
+2025-11-21 16:01:50.58
+ac019860
+User
+Servidor Next.js + Socket.io + MCP listo en http://0.0.0.0:5000

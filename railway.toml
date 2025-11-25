@@ -1,0 +1,16 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "cd frontend && npm install && npm run build"
+
+[deploy]
+startCommand = "cd frontend && npm start"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
+
+[[healthcheck]]
+endpoint = "/"
+method = "GET"
+timeout = 30
+
+[service]
+name = "whatsapp-claude-agent"

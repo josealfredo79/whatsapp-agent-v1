@@ -1,0 +1,109 @@
+2025-11-21 16:36:17.93
+0abe3ec3
+System
+metasidecar: loaded enterprise status from environment is_enterprise=false
+2025-11-21 16:36:17.93
+0abe3ec3
+System
+forwarding local port 5000 to external port 80 (mapped as 1104)
+2025-11-21 16:36:27.61
+c1cc9e99
+System
+system: received signal terminated
+2025-11-21 16:36:36.36
+0abe3ec3
+User
+Servidor Next.js + Socket.io + MCP listo en http://0.0.0.0:5000
+2025-11-21 16:48:26.66
+47b160e1
+System
+metasidecar: loaded enterprise status from environment is_enterprise=false
+2025-11-21 16:48:26.66
+47b160e1
+System
+starting up user application
+2025-11-21 16:48:26.67
+47b160e1
+System
+forwarding local port 5000 to external port 80 (mapped as 1104)
+2025-11-21 16:48:44.50
+47b160e1
+User
+Servidor Next.js + Socket.io + MCP listo en http://0.0.0.0:5000
+2025-11-21 16:57:35.04
+3c2e63f0
+System
+starting up user application
+2025-11-21 16:57:35.04
+3c2e63f0
+System
+metasidecar: loaded enterprise status from environment is_enterprise=false
+2025-11-21 16:57:35.04
+3c2e63f0
+System
+forwarding local port 5000 to external port 80 (mapped as 1104)
+2025-11-21 16:57:37.49
+47b160e1
+System
+system: received signal terminated
+2025-11-21 16:57:41.31
+3c2e63f0
+User
+> frontend@0.1.0 prestart
+2025-11-21 16:57:41.31
+3c2e63f0
+User
+> node create-google-credentials.js
+2025-11-21 16:57:41.59
+3c2e63f0
+User
+✅ google-credentials.json creado correctamente desde variable de entorno
+2025-11-21 16:57:41.60
+3c2e63f0
+User
+> NODE_ENV=production node server.js
+2025-11-21 16:57:41.60
+3c2e63f0
+User
+> frontend@0.1.0 start
+2025-11-21 16:57:47.37
+3c2e63f0
+User
+Servidor Next.js + Socket.io + MCP listo en http://0.0.0.0:5000
+2025-11-21 17:12:11.79
+428b9ded
+System
+starting up user application
+
+2025-11-21 17:12:11.79
+428b9ded
+System
+metasidecar: loaded enterprise status from environment is_enterprise=false
+2025-11-21 17:12:11.79
+428b9ded
+System
+forwarding local port 5000 to external port 80 (mapped as 1104)
+2025-11-21 17:12:18.90
+428b9ded
+User
+> node create-google-credentials.js
+2025-11-21 17:12:18.90
+428b9ded
+User
+> frontend@0.1.0 prestart
+2025-11-21 17:12:19.21
+428b9ded
+User
+✅ google-credentials.json creado correctamente desde variable de entorno
+2025-11-21 17:12:19.22
+428b9ded
+User
+> NODE_ENV=production node server.js
+2025-11-21 17:12:19.22
+428b9ded
+User
+> frontend@0.1.0 start
+2025-11-21 17:12:26.50
+428b9ded
+User
+Servidor Next.js + Socket.io + MCP listo en http://0.0.0.0:5000

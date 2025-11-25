@@ -1,0 +1,13 @@
+
+node_modules
+logs
+*.log
+.env
+.env.*
+# frontend/
+# public/
+test/
+.git
+.gitignore
+README.md
+.vscode

@@ -1,0 +1,83 @@
+2025-11-21T21:57:11Z info: Deployment: 4f8be245-cef4-437e-abfc-7d96df8ba8a2
+2025-11-21T21:57:11Z info: Build: eebfaf3e-edc3-464e-98fe-22a6d5cf07f3
+2025-11-21T21:57:11Z info: Connecting to builder
+2025-11-21T21:57:11Z info: Builder connected
+2025-11-21T21:57:12Z info: Installing packages
+--> npm install
+
+
+up to date, audited 1 package in 309ms
+
+
+found 0 vulnerabilities
+
+2025-11-21T21:57:12Z info: Starting Build
+
+> frontend@0.1.0 build
+> next build
+
+
+  ▲ Next.js 14.2.23
+
+   Creating an optimized production build ...
+
+ ✓ Compiled successfully
+
+   Linting and checking validity of types ...
+
+   Collecting page data ...
+
+   Generating static pages (0/6) ...
+
+   Generating static pages (1/6) 
+
+   Generating static pages (2/6) 
+
+   Generating static pages (4/6) 
+
+ ✓ Generating static pages (6/6)
+
+   Finalizing page optimization ...
+
+   Collecting build traces ...
+
+Route (app)                               Size     First Load JS
+┌ ○ /                                     5.46 kB        92.6 kB
+├ ○ /_not-found                           875 B            88 kB
+└ ○ /dashboard                            14.6 kB         102 kB
++ First Load JS shared by all             87.2 kB
+  ├ chunks/117-ac2708352748f12e.js        31.6 kB
+  ├ chunks/fd9d1056-87da80e0c187477b.js   53.7 kB
+  └ other shared chunks (total)           1.91 kB
+
+Route (pages)                             Size     First Load JS
+┌ ƒ /api/agendar                          0 B            78.9 kB
+├ ƒ /api/conversations                    0 B            78.9 kB
+├ ƒ /api/google-docs                      0 B            78.9 kB
+├ ƒ /api/health                           0 B            78.9 kB
+├ ƒ /api/ia-test                          0 B            78.9 kB
+├ ƒ /api/messages/[id]                    0 B            78.9 kB
+├ ƒ /api/registro                         0 B            78.9 kB
+├ ƒ /api/send-message                     0 B            78.9 kB
+├ ƒ /api/socket                           0 B            78.9 kB
+└ ƒ /api/webhook/whatsapp                 0 B            78.9 kB
++ First Load JS shared by all             78.9 kB
+  ├ chunks/framework-f66176bb897dc684.js  44.9 kB
+  ├ chunks/main-547d9e3b488eb538.js       32.1 kB
+  └ other shared chunks (total)           1.89 kB
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+2025-11-21T21:57:51Z info: Pushing pid1 binary layer...
+2025-11-21T21:57:52Z info: Pushing hosting layer...
+2025-11-21T21:57:52Z info: Pushing Repl layer...
+2025-11-21T21:57:53Z info: Created hosting layer
+2025-11-21T21:57:53Z info: Created pid1 binary layer
+2025-11-21T21:58:22Z info: Created Repl layer
+2025-11-21T21:58:24Z info: Pushed image manifest
+2025-11-21T21:58:25Z info: Pushed soci index manifest
+2025-11-21T21:58:30Z info: Creating virtual machine
+2025-11-21T21:58:52Z info: Virtual machine created
+2025-11-21T21:58:52Z info: Waiting for deployment to be ready
+2025-11-21T21:59:13Z info: Deployment successful
