@@ -1,0 +1,16 @@
+# Configuración Nixpacks para Railway
+# WhatsApp Agent con Next.js + Socket.io
+
+providers = ["node"]
+
+[phases.setup]
+nixPkgs = ["nodejs-20_x", "npm-9_x"]
+
+[phases.install]
+cmds = ["cd frontend && npm install"]
+
+[phases.build]
+cmds = ["cd frontend && npm run build"]
+
+[start]
+cmd = "cd frontend && npm start"
