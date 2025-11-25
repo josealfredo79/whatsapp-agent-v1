@@ -7,10 +7,6 @@ startCommand = "cd frontend && npm start"
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
 
-[[healthcheck]]
-endpoint = "/"
-method = "GET"
-timeout = 30
-
-[service]
-name = "whatsapp-claude-agent"
+[variables]
+NIXPACKS_NODE_VERSION = "20"
+NODE_ENV = "production"
